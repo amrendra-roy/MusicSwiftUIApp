@@ -9,7 +9,15 @@ import SwiftUI
 
 struct NewsViewController: View {
     var body: some View {
-        Text("News")
+        List {
+            ForEach(1...14, id: \.self) { index in
+                NavigationLink(destination: NewsDetailViewController()) {
+                    NewsListCellView()
+                        .padding()
+                }
+            }
+        }
+        .navigationTitle(Text("News List"))
     }
 }
 
