@@ -37,6 +37,7 @@ struct NewsViewController: View {
             .navigationBarTitle(Text("News"))
             .navigationBarTitleDisplayMode(.inline)
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

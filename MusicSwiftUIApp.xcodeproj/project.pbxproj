@@ -109,13 +109,21 @@
 			path = MusicSwiftUIApp;
 			sourceTree = "<group>";
 		};
+		5592403D271C56B8007EC37B /* Search Tab */ = {
+			isa = PBXGroup;
+			children = (
+				55B23DB2271AA4090024D3A2 /* SearchViewController.swift */,
+			);
+			path = "Search Tab";
+			sourceTree = "<group>";
+		};
 		55B23DAB271A9E310024D3A2 /* Music App */ = {
 			isa = PBXGroup;
 			children = (
 				55B23DAC271A9E530024D3A2 /* HomeViewController.swift */,
 				55B23DB6271AB5AC0024D3A2 /* Music Tab */,
 				55B23DB7271AC3DD0024D3A2 /* News Tab */,
-				55B23DB2271AA4090024D3A2 /* SearchViewController.swift */,
+				5592403D271C56B8007EC37B /* Search Tab */,
 			);
 			path = "Music App";
 			sourceTree = "<group>";

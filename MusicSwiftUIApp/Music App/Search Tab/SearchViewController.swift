@@ -12,7 +12,7 @@ struct SearchViewController: View {
         NavigationView {
             Text("Search")
                 .navigationBarTitle(Text("Search"))
-        }
+        }.navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
