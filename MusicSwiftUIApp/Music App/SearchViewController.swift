@@ -9,7 +9,10 @@ import SwiftUI
 
 struct SearchViewController: View {
     var body: some View {
-        Text("Search")
+        NavigationView {
+            Text("Search")
+                .navigationBarTitle(Text("Search"))
+        }
     }
 }
 

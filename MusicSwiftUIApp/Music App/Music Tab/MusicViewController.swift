@@ -11,6 +11,7 @@ struct MusicViewController: View {
     private let gridLayout: [GridItem] = [.init(.flexible()), .init(.flexible())]
     
     var body: some View {
+        NavigationView {
             ScrollView(.vertical, showsIndicators: false) {
                 LazyVGrid(columns: gridLayout, alignment: .center, spacing: 16, content: {
                     MusicGridCellView()
@@ -31,8 +32,7 @@ struct MusicViewController: View {
                 .padding()
             }//: ScrollView
             .navigationBarTitleDisplayMode(.large)
-            .navigationBarBackButtonHidden(true)
-            //.navigationBarItems(leading: Text("Left"), trailing: Text("Right"))
+            .navigationBarTitle("Music")
             .navigationBarItems(trailing:
                 HStack {
                     Button(action: {
@@ -47,7 +47,8 @@ struct MusicViewController: View {
                         Text("Grid")
                     })
                 } //: HStack
-            )//: navigationBarItems //amar not working navigation items
+            )
+        }
     }
 }
 

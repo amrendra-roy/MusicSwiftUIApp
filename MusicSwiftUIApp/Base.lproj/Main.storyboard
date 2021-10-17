@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Djl-OV-kcL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -17,44 +16,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RsK-nH-wFe">
-                                <rect key="frame" x="83" y="269" width="154" height="30"/>
-                                <state key="normal" title="SwiftUI and Music app"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Jj-6D-0CY">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Urr-ce-1lm">
+                                <rect key="frame" x="82" y="269" width="156" height="30"/>
+                                <state key="normal" title="Embaded SwiftUI View"/>
                                 <connections>
-                                    <action selector="moreToSwiftUIMusicApp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p72-yO-fiP"/>
+                                    <action selector="moveToTabView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RIa-zO-JE9"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="RsK-nH-wFe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="47v-6V-Gyl"/>
-                            <constraint firstItem="RsK-nH-wFe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xny-zX-KrU"/>
+                            <constraint firstItem="Urr-ce-1lm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3BA-R7-S3n"/>
+                            <constraint firstItem="8Jj-6D-0CY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5BU-Lo-7m2"/>
+                            <constraint firstItem="8Jj-6D-0CY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="cJD-LI-JY6"/>
+                            <constraint firstItem="8Jj-6D-0CY" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="n1z-dp-8ud"/>
+                            <constraint firstItem="Urr-ce-1lm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nRH-An-IH6"/>
+                            <constraint firstItem="8Jj-6D-0CY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pWJ-td-uCs"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gvZ-bY-7i3"/>
+                    <connections>
+                        <outlet property="swiftUIContainer" destination="8Jj-6D-0CY" id="MSc-FC-49r"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="593" y="5"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="iEw-Cq-HoY">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Djl-OV-kcL" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DCf-2l-GfK">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="iX3-Ph-kHk"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Qxp-TP-taW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-277.5" y="14.788732394366198"/>
+            <point key="canvasLocation" x="1590" y="4.225352112676056"/>
         </scene>
     </scenes>
     <resources>
