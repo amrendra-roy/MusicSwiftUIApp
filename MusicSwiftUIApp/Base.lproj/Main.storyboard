@@ -20,7 +20,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </containerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Urr-ce-1lm">
-                                <rect key="frame" x="82" y="269" width="156" height="30"/>
+                                <rect key="frame" x="53" y="266" width="214" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Embaded SwiftUI View"/>
                                 <connections>
                                     <action selector="moveToTabView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RIa-zO-JE9"/>
@@ -45,7 +46,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1590" y="4.225352112676056"/>
+            <point key="canvasLocation" x="1404" y="-38"/>
         </scene>
     </scenes>
     <resources>

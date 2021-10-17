@@ -12,6 +12,7 @@
 		556801C3271A744D00AAE712 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 556801C1271A744D00AAE712 /* Main.storyboard */; };
 		556801C5271A744E00AAE712 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 556801C4271A744E00AAE712 /* Assets.xcassets */; };
 		556801C8271A744E00AAE712 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 556801C6271A744E00AAE712 /* LaunchScreen.storyboard */; };
+		5592403F271C66FF007EC37B /* NewsTopSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5592403E271C66FF007EC37B /* NewsTopSegmentView.swift */; };
 		55B23DA0271A76D80024D3A2 /* MusicCoreFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55B23D9F271A76D80024D3A2 /* MusicCoreFramework.framework */; };
 		55B23DA1271A76D80024D3A2 /* MusicCoreFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55B23D9F271A76D80024D3A2 /* MusicCoreFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		55B23DAA271A9C700024D3A2 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B23DA9271A9C700024D3A2 /* RootViewController.swift */; };
@@ -49,6 +50,7 @@
 		556801C4271A744E00AAE712 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		556801C7271A744E00AAE712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		556801C9271A744E00AAE712 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5592403E271C66FF007EC37B /* NewsTopSegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTopSegmentView.swift; sourceTree = "<group>"; };
 		55B23D9F271A76D80024D3A2 /* MusicCoreFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MusicCoreFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55B23DA9271A9C700024D3A2 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		55B23DAC271A9E530024D3A2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 			children = (
 				55B23DB8271AC4030024D3A2 /* NewsListCellView.swift */,
 				55B23DBD271ADF7B0024D3A2 /* NewsHeaderPageView.swift */,
+				5592403E271C66FF007EC37B /* NewsTopSegmentView.swift */,
 			);
 			path = NewsCustomViews;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				55B23DAF271AA16F0024D3A2 /* MusicViewController.swift in Sources */,
 				55B23DAA271A9C700024D3A2 /* RootViewController.swift in Sources */,
 				55B23DBB271ADE180024D3A2 /* NewsDetailViewController.swift in Sources */,
+				5592403F271C66FF007EC37B /* NewsTopSegmentView.swift in Sources */,
 				55B23DBE271ADF7B0024D3A2 /* NewsHeaderPageView.swift in Sources */,
 				55B23DB9271AC4030024D3A2 /* NewsListCellView.swift in Sources */,
 				55B23DB5271AB5A50024D3A2 /* MusicGridCellView.swift in Sources */,

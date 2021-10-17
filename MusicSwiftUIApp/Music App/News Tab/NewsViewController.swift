@@ -11,17 +11,7 @@ struct NewsViewController: View {
     var body: some View {
         NavigationView {
             VStack {
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack {
-                        ForEach(0 ..< 9) { item in
-                            Button("Buton \(item)") {
-                                print("action \(item)")
-                            }
-                        }
-                    } //: HStack
-                    .background(Color.black)
-                    .frame(height: 55, alignment: .center)
-                } //: ScrollView
+                NewsTopSegmentView() //Top segment for Stories type
                 
                 List {
                     NewsHeaderPageView()

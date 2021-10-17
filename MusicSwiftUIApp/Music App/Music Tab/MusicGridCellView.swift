@@ -15,7 +15,7 @@ struct MusicGridCellView: View {
                 .resizable()
                 .scaledToFit()
                 .cornerRadius(12)
-            Text("Amrendra Roy")
+            Text("Amrendra Rai")
                 .foregroundColor(.accentColor)
                 .fontWeight(.bold)
         }

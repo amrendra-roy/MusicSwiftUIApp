@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeViewController: View {
     var body: some View {
-        TabView(selection: .constant(0)) {
+        TabView(selection: .constant(1)) {
             MusicViewController()
                 .tag(0)
                 .tabItem {
