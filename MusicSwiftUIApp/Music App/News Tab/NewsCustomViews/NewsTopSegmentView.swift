@@ -23,7 +23,7 @@ struct NewsTopSegmentView: View {
                         .fontWeight((currentSelectedSegmentIndex == item) ? .bold : .regular)
                         .tag(item)
                         .foregroundColor(.accentColor)
-                        .frame(minWidth: 100, idealHeight: 55, alignment: .center)
+                        .frame(minWidth: 100, idealHeight: 25, alignment: .center)
                         .background(
                             Color(UIColor.secondarySystemBackground)
                                 .frame(height: 28)

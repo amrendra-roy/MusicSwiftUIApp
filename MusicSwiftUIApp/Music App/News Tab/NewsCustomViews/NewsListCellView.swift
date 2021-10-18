@@ -31,8 +31,8 @@ struct NewsListCellView: View {
                     .foregroundColor(.secondary)
                     .lineLimit(4)
                     .multilineTextAlignment(.leading)
-            }
-        }
+            } //: VStack
+        } //: HStack
     }
 }
 

@@ -15,12 +15,26 @@ struct NewsHeaderPageView: View {
 
         TabView {
             ForEach(randomDummyArray, id: \.self) { item in
-                Image("20\(item)")
-                    .resizable()
-                    .scaledToFit()
+                VStack {
+                    Image("20\(item)")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(height: 200)
+                    VStack(alignment: .leading) {
+                        Text("News Heading here, it can be multiline. Try for two line here and see the result")
+                            .font(.headline)
+                            .fontWeight(.heavy)
+                            .lineLimit(2)
+                        Text("1 day ago")
+                            .font(.caption)
+                            .foregroundColor(.secondary)
+                    }//Amar ToDo: not able to change dot's possition
+                    .padding(.horizontal, 8)
+                }
             }
         } //: TabView
         .tabViewStyle(PageTabViewStyle())
+        .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: PageIndexViewStyle.BackgroundDisplayMode.interactive))
         .background(
             Color(UIColor.secondarySystemBackground)
         )
