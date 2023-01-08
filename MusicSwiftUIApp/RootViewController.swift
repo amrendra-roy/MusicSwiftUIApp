@@ -9,10 +9,13 @@ import UIKit
 import SwiftUI
 import MusicCoreFramework
 
+import Combine
+
 class RootViewController: UIViewController {
 
     @IBOutlet weak var swiftUIContainer: UIView!
-    
+    var cancellable: AnyCancellable?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -20,8 +23,52 @@ class RootViewController: UIViewController {
         //let loginReq = LoginRequest.loginRequest()
         //title = "Storyboard UIViewController"
         swiftUIContainer.isHidden = true
+        
+        
+        
+        MusicServiceManager.configuration(with: .Dev)
+        
+        loginUserDetail()
+        
     }
 
+    func loginUserDetail() {
+        //var bag = Set<AnyCancellable>()
+        //MusicServiceManager.fetchTest()
+
+        
+        cancellable = MusicServiceManager.loginTestAPI()
+            .sink { resultCompletion in
+                print("completion = \(resultCompletion)")
+            switch resultCompletion {
+            case .failure(let error):
+                print("erorrrr = \(error)")
+            case .finished:
+                print("success = //amar")
+                return
+            }
+            } receiveValue: { outValue in
+                print("out put value = \(outValue.success)")
+                print("out put value = \(outValue.error)")
+                print("out put value = \(outValue.data)")
+                
+            }
+            //.store(in: &bag)
+
+                
+        MusicServiceManager.loginUserDetail { result in //Result<UserLoginResponse, Error>
+            switch result {
+            case .success(let result):
+                print("result detail = \(result)")
+                print("result value = \(result.success)")
+                print("result  value = \(result.error)")
+                print("result t value = \(result.data?.userData)")
+            case .failure(let error):
+                print("user login failed -= \(error.localizedDescription)" )
+            }
+        }
+    }
+    
     // Embaded SwiftUI View
     @IBAction func moveToTabView(_ sender: UIButton) {
         
